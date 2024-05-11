@@ -7,8 +7,10 @@
   --yellow-color: #f7cb15;
   --white-color: #ffffff;
 }
+
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p,
@@ -92,6 +94,7 @@ h2 {
 }
 /* NAVIGATION */
 
+
 nav {
   color: var(--secondary-color-light);
   padding: 0 20px;
@@ -101,6 +104,7 @@ nav {
   margin: 0;
   padding: 0;
   z-index: 20;
+  position: absolute;
 }
 
 .nav-logo {
@@ -148,6 +152,7 @@ nav {
 .hero {
   overflow: hidden;
   height: calc(100vh - 80px);
+  min-height: 600px;
 }
 
 .hero-wrapper {
@@ -440,8 +445,13 @@ nav {
   .hamburger {
     display: block;
   }
+
+  nav {
+    position: fixed;
+  }
+
   .nav {
-    position: absolute;
+    position: fixed;
     top: 74px;
     left: 0;
     width: 100%;
