@@ -152,7 +152,7 @@ nav {
 
 .hero-wrapper {
   height: 100%;
-  background-image: url(/assets/bakery.jpg);
+  background-image: url(assets/bakery.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -175,7 +175,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/bakery.jpg);
+  background-image: url(assets/bakery.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -355,7 +355,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url(/assets/instagram.svg);
+  background-image: url(assets/instagram.svg);
   background-size: 50px 50px;
   background-repeat: no-repeat;
   background-position: center;
