@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Uchen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="position-absolute w-100 py-4">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="nav-logo mb-0">Buttercup Bakery</h4>
+          <div class="nav-right">
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <ul class="nav">
+              <li class="navlink me-lg-5 me-md-4 mb-3 mb-md-0">
+                <a href="#menu">Menu</a>
+              </li>
+              <li class="navlink me-lg-5 me-md-4 mb-3 mb-md-0">
+                <a href="#about">About</a>
+              </li>
+              <li class="navlink mb-3 mb-md-0">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="hero-wrapper">
+        <div class="container h-100">
+          <div class="d-flex align-items-center h-100">
+            <div class="hero-content">
+              <h1 class="mb-3 text-white">Where Every Bite Tells a Story</h1>
+              <p class="mb-5 lead text-white">
+                Savor Handcrafted Creations Inspired by Tradition
+              </p>
+              <a href="#menu" class="btn btn-primary btn-lg"
+                >Explore Our Menu</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="info-section">
+        <div class="container">
+          <h2 class="text-center mb-5 pb-4 text-brown"  data-aos="fade-right" data-aos-duration="1800" data-aos-once="true">
+            Experience Buttercup Bakery
+          </h2>
+          <div class="row gx-5">
+            <div class="col-md-6"  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+              <div class="d-flex flex-column justify-content-center h-100">
+                <p class="text-italic text-uppercase">Buttercup Bakery</p>
+                <h3 class="mb-4">Products and Customer Experience</h3>
+                <p>
+                  At Buttercup Bakery, our dedication goes beyond just
+                  baking—it's about crafting exceptional experiences for our
+                  customers. With an extensive array of mouthwatering pastries,
+                  cakes, and confections, we aim to delight the senses and
+                  create lasting memories with each bite. From the warm welcome
+                  of our friendly staff to the joyous atmosphere of our bakery,
+                  every visit is an opportunity to savor the magic of our
+                  artisanal creations.
+                </p>
+                <p>
+                  Join us in elevating everyday moments into extraordinary
+                  occasions at Buttercup Bakery. Whether it's a leisurely
+                  morning pastry or a special celebration cake, we strive to
+                  make every interaction with our bakery a delightful
+                  experience. Come indulge in our delectable treats and discover
+                  the joy of Buttercup Bakery!
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+              <div class="info-section-image">
+                <img src="/assets/bakery-1.jpg" alt="Bakery Background" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section" id="menu">
+        <div class="container">
+          <h2 class="products-title text-center mb-5 pb-4" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+            Our Most Popular Products
+          </h2>
+          <div class="row gx-xl-5 pb-4">
+            <div class="col-sm-6 col-lg-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+              <div class="card mb-4 mb-lg-0">
+                <img
+                  src="/assets/product-1.jpg"
+                  class="card-img-top"
+                  alt="Fresh Bread"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Fresh Bread</h5>
+                  <p class="card-text text-center small mb-4">
+                    Our signature freshly baked bread.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   data-aos-delay="50">
+              <div class="card mb-4 mb-lg-0">
+                <img
+                  src="/assets/product-2.jpg"
+                  class="card-img-top"
+                  alt="Croissant"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Croissant</h5>
+                  <p class="card-text text-center small mb-4">
+                    Buttery perfection, freshly baked.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   data-aos-delay="100">
+              <div class="card mb-4 mb-lg-0">
+                <img
+                  src="/assets/product-3.jpg"
+                  class="card-img-top"
+                  alt="Cinnamon Roll"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Cinnamon Roll</h5>
+                  <p class="card-text text-center small mb-4">
+                    Delicious sweet cinnamon swirl.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"   data-aos-delay="150">
+              <div class="card mb-4 mb-lg-0">
+                <img
+                  src="/assets/product-4.jpg"
+                  class="card-img-top"
+                  alt="Muffin"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Muffin</h5>
+                  <p class="card-text text-center small mb-4">
+                    Rich, flavorful, baked goodness.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <a href="" class="btn btn-primary py-2" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">See more products</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" id="about">
+        <div class="container">
+          <h2 class="text-center mb-5 pb-4 text-brown" data-aos="fade-right" data-aos-duration="1800" data-aos-once="true">About Us</h2>
+          <div class="row gx-5">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+              <div class="info-section-image">
+                <img src="/assets/bakery-2.jpg" alt="Bakery" />
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+              <div class="d-flex flex-column justify-content-center h-100">
+                <p class="text-italic text-uppercase mt-4 mt-md-0">Buttercup Bakery</p>
+                <h3 class="mb-4">Crafting Culinary Delights</h3>
+                <p class="mb-5">
+                  At Buttercup Bakery, baking is not just our profession; it's
+                  our passion. With many years of experience in the art of
+                  pastry-making, our dedicated team pours their hearts into
+                  every creation. From classic croissants to decadent layer
+                  cakes, we take pride in offering a diverse selection of
+                  artisanal treats crafted with love and precision. Visit us
+                  today and experience the taste of tradition with every
+                  delightful bite.
+                </p>
+                <div class="numbers">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div
+                        class="d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h3 class="">18</h3>
+                        <p class="text-center">Years of Experience</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h3 class="">14</h3>
+                        <p class="text-center">Dedicated Professionals</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h3 class="">70</h3>
+                        <p class="text-center">Unique Products</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-reviews">
+        <div class="container">
+          <h2 class="text-center mb-5 pb-4 text-brown"  data-aos="fade-right" data-aos-duration="1800" data-aos-once="true">
+            Hear from Our Clients:
+          </h2>
+          <div class="swiper review-slider"  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review d-flex flex-column">
+                  <div class="review-stars mb-3">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                  <h5>Delicious Treats!</h5>
+                  <p>
+                    The pastries and cakes from Buttercup Bakery are absolutely
+                    delightful! Every bite is a burst of flavor and freshness. I
+                    highly recommend trying their croissants and specialty
+                    cakes. You won't be disappointed by the amazing taste,
+                    exceptional quality, and friendly service!
+                  </p>
+                  <h6 class="review-name">- John</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review d-flex flex-column">
+                  <div class="review-stars mb-3">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                  <h5>Wonderful Experience</h5>
+                  <p>
+                    Visiting Buttercup Bakery was such a pleasure! The warm and
+                    welcoming atmosphere, paired with the delicious aroma of
+                    freshly baked goods, made my visit unforgettable. The staff
+                    was friendly and attentive, and the pastries were divine.
+                    Can't wait to go back!
+                  </p>
+                  <h6 class="review-name">- Emily</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review d-flex flex-column">
+                  <div class="review-stars mb-3">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                  <h5>Exceptional Quality</h5>
+                  <p>
+                    I'm always impressed by the quality of baked goods at
+                    Buttercup Bakery. Each item is crafted with care and
+                    attention to detail, resulting in consistently delicious
+                    treats. Whether I'm grabbing a quick snack or ordering a
+                    custom cake for a special occasion, Buttercup Bakery never
+                    disappoints!
+                  </p>
+                  <h6 class="review-name">- Michael</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review d-flex flex-column">
+                  <div class="review-stars mb-3">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i>
+                  </div>
+                  <h5>Favorite Bakery</h5>
+                  <p>
+                    Buttercup Bakery has become my go-to spot for all things
+                    sweet! Their extensive selection of pastries, cakes, and
+                    confections never fails to satisfy my cravings. I appreciate
+                    the passion and creativity that goes into each item, and I'm
+                    always greeted with a smile. Buttercup Bakery is truly a
+                    gem!
+                  </p>
+                  <h6 class="review-name">- Sophia</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="">
+                <h2 class="contact-heading text-center mb-5 text-brown"  data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                  Contact Us
+                </h2>
+                <form class="d-flex flex-column align-items-center"  data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                  <div class="mb-3 w-100">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullName"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 w-100">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 w-100">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-secondary mt-4 mb-3 px-5"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section instagram-section">
+        <div class="swiper instagram-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-1.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-2.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-3.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-4.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-5.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-6.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-7.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-8.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="instagram-image">
+                  <img
+                    src="/assets/ig-9.jpg"
+                    alt="Instagram Image"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-5 pb-md-5">
+          <div class="col-md-3">
+            <h3 class="footer-logo mb-3 text-center text-md-start">
+              Buttercup Bakery
+            </h3>
+            <p class="text-white mb-5 small text-center text-md-start">
+              Infusing every bite with joy and delight, our mission is to bring
+              smiles and happiness to your every indulgence.
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-3 d-flex flex-column align-items-center">
+            <h6 class="mb-4">Contact Information</h6>
+            <p class="mb-2">123 Main Street</p>
+            <p class="mb-2">City, State ZIP</p>
+            <p class="mb-2">Phone: 123-456-7890</p>
+            <p>Email: <a href="">info@bakery.com</a></p>
+          </div>
+          <div
+            class="col-sm-6 col-md-3 d-flex flex-column align-items-center pt-4 pt-sm-0"
+          >
+            <h6 class="mb-4">Navigation</h6>
+            <a class="mb-2" href="#">Home</a>
+            <a class="mb-2" href="#">About Us</a>
+            <a class="mb-2" href="#">Menu</a>
+            <a class="mb-2" href="#">Contact Us</a>
+          </div>
+          <div
+            class="col-md-3 d-flex flex-column align-items-center align-items-md-start pt-4 pt-md-0"
+          >
+            <h6 class="mb-4">Subscribe to Our Newsletter</h6>
+            <form class="mb-4">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                  aria-label="Your email"
+                  required
+                />
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+            <div class="footer-socials">
+              <a href="" class="me-3">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="">
+                <i class="ri-facebook-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <p class="text-center mb-0">&copy Buttercup Bakery <span id="year"></span></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

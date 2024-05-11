@@ -1,0 +1,482 @@
+:root {
+  --primary-color: #557571;
+  --primary-color-dark: #324235;
+  --secondary-color: #d49a89;
+  --secondary-color-dark: #7d3d0b;
+  --secondary-color-light: #f7d1ba;
+  --yellow-color: #f7cb15;
+  --white-color: #ffffff;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  animation: slideInFromLeft 1.5s ease forwards;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.text-brown {
+  color: var(--secondary-color-dark);
+}
+
+.text-italic {
+  color: var(--primary-color);
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.btn {
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-secondary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: transparent;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(50, 66, 53, 0.25);
+}
+/* NAVIGATION */
+
+nav {
+  color: var(--secondary-color-light);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+}
+
+.nav-logo {
+  font-family: "Uchen", serif;
+}
+
+.navlink a {
+  color: var(--secondary-color-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+.navlink a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--secondary-color-light);
+  display: block;
+  margin: 4px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* HERO */
+
+.hero {
+  overflow: hidden;
+  height: calc(100vh - 80px);
+}
+
+.hero-wrapper {
+  height: 100%;
+  background-image: url(/assets/bakery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/bakery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  animation: zoom-in 10s infinite alternate;
+}
+
+.hero-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(50, 66, 53, 0.9) 75%,
+    rgba(50, 66, 53, 0.7) 100%
+  );
+  opacity: 0.95;
+  z-index: 2;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero p {
+  animation: slideInFromLeft 2s ease forwards;
+}
+
+.hero .btn {
+  animation: slideInFromLeft 2.5s ease forwards;
+}
+
+/* INFO SECTION */
+
+.info-section {
+  padding: 96px 0;
+}
+
+.info-section-image {
+  height: 100%;
+  width: 100%;
+}
+
+.info-section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.numbers h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--yellow-color);
+}
+
+.numbers p {
+  color: var(--secondary-color-dark);
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+/* PRODUCTS SECTION */
+
+.products-section {
+  background-color: var(--primary-color);
+  padding: 96px 0;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.products-title {
+  font-family: "Cinzel", serif;
+  color: var(--secondary-color-light);
+}
+
+.card {
+  border-radius: 60px;
+  overflow: hidden;
+  background-color: white;
+  border-color: var(--secondary-color-light);
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 10px;
+  transform: scale(1.01);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* REVIEW SECTION */
+
+.section-reviews {
+  padding: 48px 0 120px;
+}
+.review {
+  border: 1px solid var(--secondary-color-light);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.review-stars {
+  color: var(--yellow-color);
+}
+
+.review-name {
+  font-style: italic;
+  color: var(--secondary-color-dark);
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  padding: 96px 0;
+  background-color: var(--secondary-color-light);
+  border-top-right-radius: 100px;
+}
+
+.contact form {
+  padding: 24px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+}
+
+.contact .form-control {
+  background-color: transparent;
+  border-color: var(--secondary-color-light);
+  color: var(--primary-color);
+}
+
+.contact .form-label {
+  color: var(--white-color);
+  font-family: "Cinzel", serif;
+}
+
+/* INSTAGRAM SECTION */
+
+.instagram-slider .swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.instagram-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram-image:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(/assets/instagram.svg);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.instagram-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 96px 0 16px;
+  background-color: #324235;
+  color: var(--secondary-color-light);
+}
+
+.footer-logo {
+  font-family: "Uchen", serif;
+}
+
+.footer a,
+.footer p {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .form-control {
+  background-color: transparent;
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.footer-socials a {
+  transition: 0.4s;
+  border: 0;
+  font-size: 20px;
+  background: var(--secondary-color-light);
+  color: var(--primary-color);
+  font-weight: 500;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials a:hover {
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: var(--secondary-color-light);
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  nav {
+    background-color: var(--secondary-color-dark);
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--secondary-color-dark);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: transform 0.4s ease-in, opacity 0.4s ease;
+  }
+
+  .nav.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .navlink a {
+    font-size: 18px;
+  }
+  .hero {
+    height: 100vh;
+  }
+
+  .contact,
+  .info-section,
+  .products-section {
+    padding: 60px 0;
+  }
+
+  .section-reviews {
+    padding-bottom: 80px;
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+}
