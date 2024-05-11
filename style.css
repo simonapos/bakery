@@ -441,7 +441,7 @@ nav {
     display: block;
   }
   .nav {
-    position: fixed;
+    position: absolute;
     top: 74px;
     left: 0;
     width: 100%;
